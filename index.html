@@ -2,15 +2,30 @@
     <head>
     <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
+    <title>Simple Interest Calculator</title>
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <div class="main_card">
+            <h1>Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+            <div class="card_item"> <p>Amount</p> <input type="number"  id="amount"></div>
+            <div class="card_item"><p>Rate <span id="rateShow">10.25%</span></p><input oninput="updateRate()" type="range" min="1" max="20" value="10.25" class="slider" step="0.25" id="myRate"></div>
+            <div class="card_item"> <p>No. of Years </p><input type="number"  id="years"></div>
+            <div class="card_item">
+                <button onclick="compute()">Compute</button>
+            </div>
 
-        <button onclick="compute()">Compute</button>
+            <div class="card_result">
+                <div class="card_text">
+                    <p id="resultDeposit"></p>
+                    <p id="resultRate"></p>
+                    <p id="resultAmount"></p>
+                    <p id="resultYear"></p>
+                </div>
+            </div>
+        </div>
+        <footer class="card_footer">
+            &#169; This Calculator belongs to Abdulaziz
+        </footer>
     </body>
 </html>

@@ -1,4 +1,63 @@
-body {background-color:tan;}
-h1{color:green;}
+body {background-color:#000000}
+h1{color:rgb(131, 131, 131);}
+.main_card {
+    height: 80%;
+    background: #ffffff;
+    width: 70%;
+    text-align: center;
+    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+}
 
+.card_item  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 10px;
+}
+.card_item > p {
+    color: #000000;
+    width: 20%;
+}
+.card_item > input, span {
+    width: 50%;
+}
 
+button {
+    width: 10%;
+    justify-content: center;
+}
+.card_result {
+    width: 100%; 
+}
+.card_text {
+    justify-content: center;
+}
+.card_result > p {
+    color: #000000;
+    width: 50%;
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: #d3d3d3; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+  }
+  
+  /* Mouse-over effects */
+  .slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+  }
+
+  .card_footer {
+      color: #ffffff;
+  }
+  
